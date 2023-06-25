@@ -13,7 +13,7 @@ const setupInput = (conn) => {
   return stdin;
 };
 
-// function to handle user input
+// function to handle user inputs
 const handleUserInput = (key) => {
   if (key === '\u0003') {
     process.exit();
@@ -29,6 +29,18 @@ const handleUserInput = (key) => {
   };
   if (key === "d") {
     connection.write("Move: right");
+  };
+  if (key === "e") {
+    connection.write("Say: I'm getting longer!");
+  };
+  if (key === "q") {
+    connection.write("Say: Get on my Length!");
+  };
+  if (key === "r") {
+    connection.write("Say: Close one!");
+  };
+  if (key === "f") {
+    connection.write("Say: Good Game!");
   };
 };
 
